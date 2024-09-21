@@ -27,7 +27,7 @@ int __pop(Array* const);
 // Removes the first element from the array
 int __shift(Array* const);
 // Adds one or more elements to the array
-void __unshift(Array* const, ...);
+void __unshift(Array* const, unsigned, ...);
 // Merges two or more arrays
 void __concat(Array* const, Array* const);
 // Returns a shallow copy of a portion of array

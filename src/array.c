@@ -1,4 +1,4 @@
-#include "./array.h"
+#include "../header/array.h"
 
 // typedef struct {
 //     int val;

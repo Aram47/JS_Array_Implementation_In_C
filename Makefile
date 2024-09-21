@@ -1,5 +1,5 @@
 GCC = gcc
-FILES = main.c array.c
+FILES = main.c ./src/array.c
 EXE = array
 DEL = rm
 

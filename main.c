@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "./array.h"
+#include "./header/array.h"
 
 int main() {
     Array obj;
