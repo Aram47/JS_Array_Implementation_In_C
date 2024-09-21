@@ -374,7 +374,7 @@ Array __filter(Array* const this, bool(*cb)(int)){
 // Reduces the array to a single value by applying a function
 // to each element
 Array __reduce(Array* const this, void(*cb)(int)) {
-    
+
 }
 // Returns the first element that passes a test
 int __find(Array* const this, void(*cb)(int)) {
@@ -393,6 +393,13 @@ bool __every(Array* const this, void(*cb)(int)) {
 
 }
 // Fills all the elements in an array with a static value
-void __fill(Array* const this, int) {
-
+void __fill(Array* const this, int value) {
+    if ((!this) || (!this->head)) {
+        return;
+    }
+    Node* temp = this->head;
+    for (unsigned i = 0; i < this->length; ++i) {
+        temp->val = value;
+        temp = temp->next;
+    }
 }
